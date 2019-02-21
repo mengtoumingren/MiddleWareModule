@@ -10,9 +10,9 @@ namespace 中间件扩展模型测试
 {
     class Program
     {
-        class MyProcess : IMiddleWare<string>
+        class MyProcess : IMiddleWare
         {
-            public async Task DealWith(string context, Func<Task> next)
+            public async Task DealWith(object context, Func<Task> next)
             {
                 await Task.Run(() => { Console.WriteLine("     中间件第五层---开始"); });
                 await next.Invoke();

@@ -18,7 +18,7 @@ namespace MiddleWareModule
         {
             MiddleWares.Add(middleWare);
         }
-        public void Add(IMiddleWare<T> middleWare)
+        public void Add(IMiddleWare middleWare)
         {
             MiddleWares.Add(async (s, next) =>
             {

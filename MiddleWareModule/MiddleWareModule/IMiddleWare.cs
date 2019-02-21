@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace MiddleWareModule
 {
-    public interface IMiddleWare<T>
+    public interface IMiddleWare
     {
-        Task DealWith(T context, Func<Task> next);
+        Task DealWith(object context, Func<Task> next);
     }
 }
