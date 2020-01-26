@@ -20,6 +20,8 @@ namespace 中间件扩展模型测试
            
             }
         }
+
+
         static void Main(string[] args)
         {
             MiddleWare<string> middleWare = new MiddleWare<string>();
